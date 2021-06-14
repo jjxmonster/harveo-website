@@ -1,15 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 
-export const StyledLandingPageWrapper = styled.div`
-   width: 100vw;
-   height: 100vh;
-
-   background: linear-gradient(
-      36deg
-      , rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
-      }
-`;
-
 const backgroundAnimation = keyframes`
 0% {
    visibility: visible;
@@ -27,7 +17,17 @@ const borderAnimation = keyframes`
    width:60%;
  }
 `;
-export const StyledLandingPageWelcome = styled.div`
+const scrollArrowAnimation = keyframes`
+from {
+   transform:translateY(-10px);
+  }
+  to {
+   transform:translateY(20px);
+   opacity:0;
+  }
+`;
+export const StyledWelcomePage = styled.div`
+   z-index: 10000;
    width: 100vw;
    height: 100vh;
    position: fixed;
@@ -47,7 +47,11 @@ export const StyledLandingPageWelcome = styled.div`
          animation: ${backgroundAnimation} 1s linear forwards;
          animation-delay: 1s;
          position: absolute;
-         background: rgb(56, 56, 56);
+         background: linear-gradient(
+            36deg,
+            rgb(235, 235, 235) 12%,
+            rgb(245, 245, 245) 71%
+         );
          top: 0;
          margin: auto;
          width: 100%;
@@ -76,5 +80,9 @@ export const StyledLandingPageWelcome = styled.div`
    > .scroll-button {
       position: absolute;
       bottom: 2%;
+      > span i {
+         font-size: 3vh;
+         animation: ${scrollArrowAnimation} 1s linear infinite;
+      }
    }
 `;

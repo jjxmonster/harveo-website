@@ -1,0 +1,12 @@
+{
+   "welcomePage": {
+      "title": "wITAJ"
+   },
+   "nav": {
+      "1": "Platforma Harveo",
+      "2": "Referencje",
+      "3": "Blog",
+      "4": "Kontakt",
+      "dropdown": "Język"
+   }
+}

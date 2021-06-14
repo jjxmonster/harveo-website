@@ -1,0 +1,12 @@
+{
+   "welcomePage": {
+      "title": "WELCOME"
+   },
+   "nav": {
+      "1": "Harveo Platform",
+      "2": "Customer's review",
+      "3": "Blog",
+      "4": "Contact us",
+      "dropdown": "Language"
+   }
+}
