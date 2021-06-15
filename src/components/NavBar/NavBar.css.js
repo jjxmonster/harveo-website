@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledNavBarWrapper = styled.nav`
+   z-index: 100;
    width: 100%;
    height: 15%;
    display: flex;

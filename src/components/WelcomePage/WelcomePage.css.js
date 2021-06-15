@@ -81,8 +81,10 @@ export const StyledWelcomePage = styled.div`
       position: absolute;
       bottom: 2%;
       > span i {
+         transform: translateY(-10px);
          font-size: 3vh;
          animation: ${scrollArrowAnimation} 1s linear infinite;
+         animation-delay: 2.7s;
       }
    }
 `;

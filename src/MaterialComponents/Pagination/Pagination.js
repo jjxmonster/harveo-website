@@ -14,12 +14,12 @@ const useStyles = makeStyles(styles);
 
 export default function Pagination(props) {
    const classes = useStyles();
-   const { pages, color } = props;
+   const { pages, color, className } = props;
+   const classNamesArray = [classes.pagination, className];
 
    return (
-      <ul className={classes.pagination}>
+      <ul className={classNamesArray.join(' ')}>
          {pages.map((prop, key) => {
-            console.log(prop.onClick);
             const paginationLink = classNames({
                [classes.paginationLink]: true,
                [classes[color]]: prop.active,
@@ -33,7 +33,7 @@ export default function Pagination(props) {
                      </Button>
                   ) : (
                      <Button
-                        onClick={() => alert("you've clicked " + prop.text)}
+                        onClick={() => pages[0].onClick(key)}
                         className={paginationLink}
                      >
                         {prop.text}
@@ -59,5 +59,6 @@ Pagination.propTypes = {
          onClick: PropTypes.func,
       })
    ).isRequired,
+   className: PropTypes.string,
    color: PropTypes.oneOf(['primary', 'info', 'success', 'warning', 'danger']),
 };

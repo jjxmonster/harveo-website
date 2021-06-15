@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import Logo from '../../images/Harveo-logo.png';
 
 import CustomDropdown from 'MaterialComponents/CustomDropdown/CustomDropdown';
 import { StyledNavBarWrapper } from './NavBar.css.js';
+import { navBarAnimation } from './NavBarAnimation.js';
 
 const NavBar = () => {
    const { i18n, t } = useTranslation();
@@ -25,8 +26,9 @@ const NavBar = () => {
             break;
       }
    };
+
    return (
-      <StyledNavBarWrapper>
+      <StyledNavBarWrapper className='nav-bar'>
          <img src={Logo} alt='logo' className='nav-logo' />
          <a>{t('nav.1')}</a>
          <a>{t('nav.2')}</a>
