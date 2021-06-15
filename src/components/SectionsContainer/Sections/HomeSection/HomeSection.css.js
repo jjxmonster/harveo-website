@@ -4,6 +4,7 @@ export const StyledHomeSectionWrapper = styled.section`
    width: 100%;
    height: 100%;
    display: flex;
+   padding: 0 5%;
 `;
 
 export const StyledHomeTextWrapper = styled.div`
