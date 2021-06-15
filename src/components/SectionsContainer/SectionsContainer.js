@@ -39,7 +39,16 @@ const SectionsContainer = () => {
       // wait for transition ending, then change page number and default settings
       setTimeout(() => {
          setActivePage(index);
-         history.push('/about');
+         switch (index) {
+            case 1:
+               history.push('/');
+               break;
+            case 2:
+               history.push('/about');
+               break;
+            default:
+               break;
+         }
          setPages(
             pages.map((item, i) => {
                if (i === index - 1) return { active: true, text: '_____' };

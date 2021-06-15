@@ -18,7 +18,13 @@
    },
    "about": {
       "text1": "Jesteśmy butikową firmą w 100% napędzaną pasją i mocno skoncentrowaną na jakości, zaufaniu i długotrwałych relacjach z naszymi klientami, dzięki czemu obecnie pracujemy praktycznie wyłącznie na rekomendacjach rynku premium. Działamy od 2010 roku mając zaszczyt pomagać ponad pięciu tysiącom klientów na całym świecie. Dzięki temu doświadczeniu doskonale znamy i rozumiemy sytuację osoby stojącej przed decyzją o zaciągnięciu kredytu hipotecznego lub osoby budującej portfel nieruchomości inwestycyjnych.",
-      "text2": "Mając świadomość, jak zawiły, skomplikowany i wieloetapowy jest proces, dokładamy wszelkich starań, aby każda rzecz z nim związana była dla Ciebie jasna i całkowicie przejrzysta. Zapewniamy kompleksową obsługę, pomoc i wsparcie na każdym etapie procesu, a także negocjujemy warunki kredytu z bankami, co gwarantuje satysfakcję każdej osoby, która do nas przyjdzie. Naszą misją jest pomaganie ludziom i wprowadzanie nowych standardów na rynku finansowym poprzez zapewnienie najwyższej jakości obsługi oraz modelu współpracy opartego na zaufaniu i świetnej relacji z klientem.",
-      "text3": "Wyróżnia nas empatia, moralność i podejście etyczne – co wynika bezpośrednio z naszych charakterów i wewnętrznych przekonań. Działamy z pasji do finansów, liczb i relacji z klientami. Satysfakcja, jaką daje nam zadowolenie naszych klientów – jest bezcenna."
+      "text2": "Mając świadomość, jak zawiły, skomplikowany i wieloetapowy jest proces, dokładamy wszelkich starań, aby każda rzecz z nim związana była dla Ciebie jasna i całkowicie przejrzysta. Zapewniamy kompleksową obsługę, pomoc i wsparcie na każdym etapie procesu, a także negocjujemy warunki kredytu z bankami, co gwarantuje satysfakcję każdej osoby, która do nas przyjdzie.",
+      "text3": "Wyróżnia nas empatia, moralność i podejście etyczne – co wynika bezpośrednio z naszych charakterów i wewnętrznych przekonań. Działamy z pasji do finansów, liczb i relacji z klientami. Satysfakcja, jaką daje nam zadowolenie naszych klientów – jest bezcenna.",
+      "numbers": {
+         "exp": "Lat doświadczenia",
+         "served": "Obsłużonych klientów",
+         "credits": "Uruchomionych finansowań",
+         "offer": "Banków w ofercie"
+      }
    }
 }
