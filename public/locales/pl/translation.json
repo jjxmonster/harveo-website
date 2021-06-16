@@ -25,6 +25,42 @@
          "served": "Obsłużonych klientów",
          "credits": "Uruchomionych finansowań",
          "offer": "Banków w ofercie"
+      },
+      "expansion": {
+         "section-1": {
+            "header": "Relacja i zaufanie",
+            "text": "Prowadzimy Cię „od A do Z” przez cały proces uzyskiwania finansowania w banku, zawsze stojąc po Twojej stronie i reprezentując Twój interes. Nigdy nie zostajesz bez opieki. Od wyjaśnienia zagadnień prawa bankowego, przez podstawy ekonomii, złożone regulacje, ustawy oraz rekomendacje KNF po kompletowanie dokumentów, rejestracje wniosków kredytowych, współpracę z notariuszami, rzeczoznawcami majątkowymi i tłumaczami przysięgłymi. Na każdym etapie chronimy Cię i odpowiadamy na każde pytanie, abyś czuł się bezpiecznie i pewnie podczas każdego kolejnego kroku. Cenimy relacje i zaufanie jakim jesteśmy darzeni, zawsze stawiając każdego klienta jako nasz najwyższy priorytet."
+         },
+         "section-2": {
+            "header": "Niezależność i renoma",
+            "text": "Reprezentujemy Ciebie, nie bank. Harveo opiera się na unikatowych wartościach, – pasji, empatii oraz ambicji dostarczania na rynek nowej jakości obsługi, w tym poprzez kompleksową obsługę w języku angielskim obcokrajowców w Polsce. To Klient jest zawsze naszym priorytetem, a nie krótkoterminowy zysk. Dlatego możemy być dumni, że w ciągu 11 lat stworzyliśmy firmę o doskonałej reputacji i tysiącach zadowolonych, polecających nas Klientów."
+         },
+         "section-3": {
+            "header": "Najwyższa jakość",
+            "text": "Nasze oddziały zlokalizowane są w najnowszych biurowcach, abyś czuł się wyjątkowo i komfortowo na każdym etapie współpracy. Wiedza, profesjonalizm, świetna atmosfera i wyśmienita kawa. Jakość obsługi i satysfakcja klienta jest zawsze na pierwszym miejscu."
+         },
+         "section-4": {
+            "header": "Brak prowizji",
+            "text": "Nasza usługa jest dla Ciebie całkowicie bezpłatna – pomimo, że wynagradzają nas banki, Twoja oferta jest taka sama lub nawet tańsza niż ta dostępna przez Internet lub bezpośrednio w banku. Dotyczy to zarówno kredytów hipotecznych jak i leasingów."
+         },
+         "section-5": {
+            "header": "Bezpieczeństwo",
+            "text": "W obecnych czasach niezwykle istotnym jest, aby korzystać z usług wyłącznie zweryfikowanych i godnych zaufania podmiotów. Firma Harveo jest wpisana do rejestru KNF pod nr RPH001108 oraz posiada polisę OC nr COR100030."
+         },
+         "section-6": {
+            "header": "Opieka posprzedażowa",
+            "text": "Po zakończeniu całego procesu kredytowego informujemy Cię jeżeli na rynku pojawi się nowa korzystniejsza oferta, niższa marża lub wygodniejsze rozwiązanie. Dodatkowo przez cały okres kredytowania możesz się z nami skontaktować aby uzyskać pomoc lub odpowiedzi na nurtujące pytania"
+         },
+         "section-7": {
+            "header": "Zasięg działalności",
+            "text": "Stacjonarnie w jednym z naszych biur:",
+            "city1": "Kraków",
+            "city2": "Warszawa",
+            "city3": "Gdańsk",
+            "city4": "Katowice",
+            "city5": "Wrocław"
+         },
+         "button": "Skontaktuj się z nami"
       }
    }
 }

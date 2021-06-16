@@ -11,6 +11,7 @@ const SectionsTransitionsContainer = ({ direction }) => {
                x: '-100%',
                duration: 2,
                delay: 1,
+               ease: 'easeInOut',
             });
             break;
          case 'right':
@@ -18,6 +19,7 @@ const SectionsTransitionsContainer = ({ direction }) => {
                x: '100%',
                duration: 2,
                delay: 1,
+               ease: 'easeInOut',
             });
             break;
          default:

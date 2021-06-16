@@ -25,6 +25,42 @@
          "served": "Served clients",
          "credits": "Made credits",
          "offer": "Banks in offer"
+      },
+      "expansion": {
+         "section-1": {
+            "header": "Trust and long-term relationship",
+            "text": "We guide you “from A to Z” through the entire process of obtaining financing in the bank, always standing by your side and representing your interests. You are never left unattended. From explaining banking law issues, through the basics of economics, complex regulations, laws and recommendations of the Polish Financial Supervision Authority to completing documents, registering loan applications, cooperation with notaries, property appraisers and sworn translators. At every stage, we protect you and answer every question so that you feel safe and confident during each subsequent step. We value the relationship and the trust we place in us, always putting each client as our highest priority."
+         },
+         "section-2": {
+            "header": "Independence",
+            "text": "We represent you, not the bank. Harveo is based on unique values, – passion, empathy and ambition to provide a new quality of service to the market, including through comprehensive English-language service for foreigners in Poland. The customer is always our priority, not a short-term profit. That is why we can be proud that over 11 years we have created a company with an excellent reputation and thousands of satisfied customers recommending us."
+         },
+         "section-3": {
+            "header": "The highest quality of service",
+            "text": "Our branches are located in the newest office buildings so that you can feel special and comfortable at every stage of cooperation. Knowledge, professionalism, great atmosphere and delicious coffee. Service quality and customer satisfaction always come first."
+         },
+         "section-4": {
+            "header": "No commission fee for service",
+            "text": "Our service is completely free for you – despite the fact that we are rewarded by banks, your offer is the same or even cheaper than that available online or directly at the bank. This applies to both mortgage loans and leasing."
+         },
+         "section-5": {
+            "header": "Security of cooperation",
+            "text": "Nowadays, it is extremely important to use the services of only verified and trustworthy entities. Harveo is entered in the KNF register under the number RPH001108 and has a civil liability insurance policy number COR100030."
+         },
+         "section-6": {
+            "header": "Real after-sales care",
+            "text": "After completing the entire loan process, we will inform you if a new, more advantageous offer, lower margin or more convenient solution appears on the market. In addition, throughout the entire loan period, you can contact us for help or answers to bothering questions."
+         },
+         "section-7": {
+            "header": "Operation range",
+            "text": "Stationary in one of our offices:",
+            "city1": "Cracow",
+            "city2": "Warsaw",
+            "city3": "Gdansk",
+            "city4": "Katowice",
+            "city5": "Wroclaw"
+         },
+         "button": "Contact us"
       }
    }
 }

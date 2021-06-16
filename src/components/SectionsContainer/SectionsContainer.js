@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { Switch, Route, useHistory } from 'react-router-dom';
 import gsap from 'gsap';
 
 import Paginations from 'MaterialComponents/Pagination/Pagination.js';
@@ -12,7 +11,15 @@ import {
    GoogleReviewSection,
    AboutSection,
 } from './Sections';
-import { homePageAnimationsOnUnMount } from './Sections/HomeSection/HomeSectionAnimations.js';
+// pages animations on unmount
+import {
+   homePageAnimationsOnMount,
+   homePageAnimationsOnUnMount,
+} from './Sections/HomeSection/HomeSectionAnimations.js';
+import {
+   aboutPageAnimationsOnUnMount,
+   aboutSectionAnimations,
+} from './Sections/AboutSection/AboutSectionAnimations.js';
 
 const SectionsContainer = () => {
    const [transitionDirection, setTransitionDirection] = useState('left');
@@ -24,9 +31,9 @@ const SectionsContainer = () => {
       { text: '_____' },
       { text: '_____' },
    ]);
-   const history = useHistory();
 
    const handleChangePage = index => {
+      if (activePage === index) return;
       setIsTransitionActive(true);
       index > activePage
          ? setTransitionDirection('left')
@@ -35,20 +42,11 @@ const SectionsContainer = () => {
       setTimeout(() => {
          animateComponentUnMount();
          gsap.to('.pagination', { opacity: 0 });
+         gsap.to('footer', { opacity: 0 });
       }, 0);
       // wait for transition ending, then change page number and default settings
       setTimeout(() => {
          setActivePage(index);
-         switch (index) {
-            case 1:
-               history.push('/');
-               break;
-            case 2:
-               history.push('/about');
-               break;
-            default:
-               break;
-         }
          setPages(
             pages.map((item, i) => {
                if (i === index - 1) return { active: true, text: '_____' };
@@ -56,55 +54,45 @@ const SectionsContainer = () => {
             })
          );
          gsap.to('.pagination', { opacity: 1 });
+         gsap.to('footer', { opacity: 1 });
          setIsTransitionActive(false);
       }, 2500);
    };
 
-   // const PageToDisplaySwitch = () => {
-   //    switch (activePage) {
-   //       case 1:
-   //          return (
-   //             <HomeSection
-   //                handleChangePage={handleChangePage}
-   //                activePage={activePage}
-   //             />
-   //          );
-   //       case 2:
-   //          return <AboutSection />;
-   //       case 3:
-   //          return <ProfitsSection />;
-   //       case 4:
-   //          return <GoogleReviewSection />;
-   //       default:
-   //          <HomeSection />;
-   //    }
-   // };
+   const PageToDisplaySwitch = () => {
+      switch (activePage) {
+         case 1:
+            return <HomeSection handleChangePage={handleChangePage} />;
+         case 2:
+            return <AboutSection handleChangePage={handleChangePage} />;
+         case 3:
+            return <ProfitsSection />;
+         case 4:
+            return <GoogleReviewSection />;
+         default:
+            <HomeSection />;
+      }
+   };
+
    const animateComponentUnMount = () => {
       switch (activePage) {
          case 1:
             homePageAnimationsOnUnMount();
             break;
+         case 2:
+            aboutPageAnimationsOnUnMount();
+            break;
          default:
-            console.log('elo');
+            return;
       }
    };
 
    return (
-      <StyledSectionsContainer>
+      <StyledSectionsContainer className='section-container'>
          {isTransitionActive ? (
             <SectionsTransitionsContainer direction={transitionDirection} />
          ) : null}
-         <Switch>
-            <Route path='/about'>
-               <AboutSection />
-            </Route>
-            <Route path='/' exact>
-               <HomeSection
-                  handleChangePage={handleChangePage}
-                  activePage={activePage}
-               />
-            </Route>
-         </Switch>
+         <PageToDisplaySwitch />
          <Paginations
             pages={[
                {

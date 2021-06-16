@@ -17,7 +17,7 @@ const borderAnimation = keyframes`
    width:60%;
  }
 `;
-const scrollArrowAnimation = keyframes`
+export const scrollArrowAnimation = keyframes`
 from {
    transform:translateY(-10px);
   }

@@ -1,11 +1,11 @@
 import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Logo from '../../images/Harveo-logo.png';
-
 import CustomDropdown from 'MaterialComponents/CustomDropdown/CustomDropdown';
 import { StyledNavBarWrapper } from './NavBar.css.js';
-import { navBarAnimation } from './NavBarAnimation.js';
 
 const NavBar = () => {
    const { i18n, t } = useTranslation();
@@ -26,6 +26,25 @@ const NavBar = () => {
             break;
       }
    };
+
+   useEffect(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      const showAnim = gsap
+         .from('.nav-bar', {
+            yPercent: -100,
+            paused: true,
+            duration: 0.2,
+         })
+         .progress(1);
+
+      ScrollTrigger.create({
+         start: 'top top',
+         end: 9999,
+         onUpdate: self => {
+            self.direction === -1 ? showAnim.play() : showAnim.reverse();
+         },
+      });
+   }, []);
 
    return (
       <StyledNavBarWrapper className='nav-bar'>

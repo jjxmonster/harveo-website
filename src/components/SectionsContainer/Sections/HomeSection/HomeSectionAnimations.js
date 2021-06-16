@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 
 export const homePageAnimationsOnMount = () => {
+   console.log('home page');
    //text
    gsap.from('.title-home', { x: -50, opacity: 0, delay: 0.7 });
    gsap.from('.description-home', { x: -50, opacity: 0, delay: 0.7 });

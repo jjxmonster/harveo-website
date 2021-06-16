@@ -1,14 +1,34 @@
 import styled from 'styled-components';
 
+import { scrollArrowAnimation } from '../../../WelcomePage/WelcomePage.css.js';
+
 export const StyledAboutSectionWrapper = styled.section`
    width: 100%;
-   height: 100%;
+   padding-top: 15vh;
+`;
+export const StyledGridContainerAbout = styled.section`
+   width: 100%;
+   height: 85vh;
    padding-bottom: 5%;
    padding-left: 10%;
    padding-right: 10%;
    display: grid;
    grid-template-columns: 1fr 1fr;
    grid-template-rows: 1fr 1fr 1fr 12%;
+   position: relative;
+   > .about-scroll-button {
+      position: absolute;
+      bottom: 3%;
+      left: 5%;
+      > span {
+         font-size: 1.5vh;
+         text-transform: none;
+      }
+      > span .fa-long-arrow-alt-down {
+         font-size: 3vh;
+         animation: ${scrollArrowAnimation} 2s ease infinite;
+      }
+   }
    > aside {
       padding: 0 5%;
       position: relative;
@@ -33,8 +53,8 @@ export const StyledAboutSectionWrapper = styled.section`
    }
 `;
 export const StyledTopTextContainer = styled.aside`
-   grid-column-start: 2;
-   grid-column-end: 3;
+   grid-column-start: 1;
+   grid-column-end: 2;
    grid-row-start: 1;
    grid-row-end: 2;
    border: 1px solid #e6e6e6;
@@ -44,10 +64,10 @@ export const StyledTopTextContainer = styled.aside`
    justify-content: center;
 `;
 export const StyledCenterTextContainer = styled.aside`
-   grid-column-start: 1;
-   grid-column-end: 2;
-   grid-row-start: 2;
-   grid-row-end: 3;
+   grid-column-start: 2;
+   grid-column-end: 3;
+   grid-row-start: 1;
+   grid-row-end: 2;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -56,8 +76,8 @@ export const StyledCenterTextContainer = styled.aside`
 export const StyledBottomTextContainer = styled.aside`
    grid-column-start: 2;
    grid-column-end: 3;
-   grid-row-start: 3;
-   grid-row-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 3;
    border: 1px solid #e6e6e6;
    border-bottom: 0;
    display: flex;
@@ -100,19 +120,19 @@ const ImageWrapper = styled.div`
    &:hover h4 {
       transform: translateY(-10px);
    }
-   &:after {
-      transition: 1s ease;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      content: '';
-      position: absolute;
-      opacity: 0.95;
-      background: rgb(235, 235, 235);
-      left: 0;
-      right: 0;
-      margin: auto;
-   }
+   // &:after {
+   //    transition: 1s ease;
+   //    width: 100%;
+   //    height: 100%;
+   //    z-index: 0;
+   //    content: '';
+   //    position: absolute;
+   //    opacity: 0.95;
+   //    background: rgb(235, 235, 235);
+   //    left: 0;
+   //    right: 0;
+   //    margin: auto;
+   // }
    > img {
       width: 100%;
       object-fit: cover;
@@ -130,8 +150,11 @@ const ImageWrapper = styled.div`
 export const StyledTopImageWrapper = styled(ImageWrapper)`
    grid-column-start: 1;
    grid-column-end: 2;
-   grid-row-start: 1;
-   grid-row-end: 2;
+   grid-row-start: 2;
+   grid-row-end: 4;
+   > svg {
+      width: 100%;
+   }
 `;
 export const StyledCenterImageWrapper = styled(ImageWrapper)`
    grid-column-start: 2;

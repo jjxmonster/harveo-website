@@ -5,10 +5,16 @@ export const StyledNavBarWrapper = styled.nav`
    width: 100%;
    height: 15%;
    display: flex;
-   position: relative;
+   position: fixed;
+   top: 0;
    align-items: center;
    justify-content: space-around;
    padding: 0 20%;
+   background: linear-gradient(
+      36deg
+      , rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
+      }
+   transition: ease 0.4s;
    > a {
       cursor: pointer;
       font-weight: 700;

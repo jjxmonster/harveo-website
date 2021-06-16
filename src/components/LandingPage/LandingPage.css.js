@@ -2,11 +2,19 @@ import styled, { keyframes } from 'styled-components';
 
 export const StyledLandingPageWrapper = styled.div`
    width: 100vw;
-   height: 100vh;
-
    background: linear-gradient(
       36deg
       , rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
+      }
+      > .footer-developed{
+         height:20%;
+         >.footer-center{
+            display: flex;
+         }
+         >.footer-bottom{display:block;}
+         >h3{
+            opacity:1;
+         }
       }
 `;
 

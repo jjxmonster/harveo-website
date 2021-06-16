@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledHomeSectionWrapper = styled.section`
    width: 100%;
-   height: 100%;
+   height: 100vh;
    display: flex;
    padding: 0 5%;
 `;
@@ -30,7 +30,7 @@ export const StyledHomeImageWrapper = styled.div`
    align-items: center;
    justify-content: center;
    > svg {
-      width: 70%;
-      height: 70%;
+      width: 80%;
+      height: 80%;
    }
 `;
