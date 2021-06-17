@@ -129,10 +129,10 @@ export const StyledHamburgerMenu = styled.div`
          ? `
          justify-content: flex-start;
       >div:first-child{
-            transform:rotate(45deg);
+         transform:translateY(4px) rotate(45deg);
       }
       >div:last-child{
-         transform:translateY(-4px) rotate(-45deg);
+         transform: rotate(-45deg);
       }
       >div:nth-child(2){
          opacity:0;
