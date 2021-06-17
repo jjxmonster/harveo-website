@@ -14,6 +14,7 @@ export const StyledExpansionWrapper = styled.div`
       text-align: center;
       margin: 0 auto;
    }
+   
    > section:nth-child(odd) {
       background: white;
    }
@@ -29,6 +30,9 @@ export const StyledExpansionWrapper = styled.div`
       }
       > section h2{
          font-size:3vh;
+      }
+      >section:last-child{
+         justify-content:flex-start;
       }
    }
 `;

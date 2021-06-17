@@ -10,7 +10,7 @@ export const StyledFooterWrapper = styled.footer`
    justify-content: space-around;
    position: fixed;
    bottom: 0;
-   padding: 0 20% 2%;
+   padding: 0 20%;
    background: linear-gradient(
       36deg,
       rgb(235, 235, 235) 12%,
@@ -65,10 +65,13 @@ export const StyledFooterWrapper = styled.footer`
 
    // mobile
    @media only screen and (max-width: 1050px) {
+      height: 5%;
       padding: 0 5%;
       flex-direction: row;
       > h3 {
          top: 0;
+         opacity: 1;
+         font-size: 3vh;
       }
       > .footer-top {
          height: 100%;
@@ -77,7 +80,7 @@ export const StyledFooterWrapper = styled.footer`
             display: none;
          }
          > p:first-child {
-            display: block;
+            // display: block;
          }
       }
       > .footer-center {

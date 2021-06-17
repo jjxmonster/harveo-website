@@ -54,7 +54,7 @@ export const StyledGridContainerAbout = styled.section`
    //mobile
    @media only screen and (max-width: 1050px) {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 2fr 2fr 2fr 5%;
+      grid-template-rows: 5% 1.5fr 1.5fr 1.5fr;
       height: auto;
       > .about-scroll-button {
          display: none;
@@ -74,15 +74,15 @@ export const StyledTopTextContainer = styled.aside`
    @media only screen and (max-width: 1050px) {
       grid-column-start: 1;
       grid-column-end: 3;
-      grid-row-start: 1;
-      grid-row-end: 2;
+      grid-row-start: 3;
+      grid-row-end: 4;
    }
 `;
 export const StyledCenterTextContainer = styled.aside`
    grid-column-start: 2;
    grid-column-end: 3;
    grid-row-start: 1;
-   grid-row-end: 3;
+   grid-row-end: 2;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -91,8 +91,8 @@ export const StyledCenterTextContainer = styled.aside`
    @media only screen and (max-width: 1050px) {
       grid-column-start: 1;
       grid-column-end: 3;
-      grid-row-start: 3;
-      grid-row-end: 4;
+      grid-row-start: 4;
+      grid-row-end: 5;
    }
 `;
 export const StyledBottomTextContainer = styled.aside`
@@ -115,6 +115,8 @@ export const StyledNumbersContainer = styled.div`
    grid-row-start: 4;
    grid-row-end: 5;
    display: flex;
+   display: flex;
+
    padding: 0 10%;
    > div:last-child {
       border: 0;
@@ -133,8 +135,18 @@ export const StyledNumbersContainer = styled.div`
          padding: 0;
          margin: 0;
       }
+      >p{
+         padding:0;
+         margin:0;
+         text-align:center; 
+      }
    }
    @media only screen and (max-width: 1050px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      padding: 0 ;
       > div {
          > h3 {
             font-size:2vh;
@@ -146,7 +158,6 @@ export const StyledNumbersContainer = styled.div`
 export const StyledImageWrapper = styled.div`
    overflow: hidden;
    position: relative;
-
    grid-column-start: 1;
    grid-column-end: 2;
    grid-row-start: 2;
