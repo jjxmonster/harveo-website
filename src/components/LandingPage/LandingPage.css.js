@@ -15,6 +15,28 @@ export const StyledLandingPageWrapper = styled.div`
          >h3{
             opacity:1;
          }
+         @media only screen and (max-width: 1050px) {
+            
+            height: 50%;
+            > .footer-center {
+               display: flex;
+            }
+            > .footer-top {
+               flex: 2;
+               align-items: flex-start;
+               justify-content: center;
+               > p {
+                  display: block;
+               }
+            }
+            > .footer-bottom {
+               display: block;
+            }
+            > h3 {
+               opacity: 1;
+            }
+         }
+
       }
 `;
 

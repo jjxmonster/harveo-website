@@ -23,4 +23,12 @@ export const StyledExpansionWrapper = styled.div`
         , rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
         }
    }
+   @media only screen and (max-width: 1050px) {
+      > section {
+         padding: 0 5%;
+      }
+      > section h2{
+         font-size:3vh;
+      }
+   }
 `;

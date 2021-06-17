@@ -51,6 +51,15 @@ export const StyledGridContainerAbout = styled.section`
       margin: auto;
       position: absolute;
    }
+   //mobile
+   @media only screen and (max-width: 1050px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 2fr 2fr 2fr 5%;
+      height: auto;
+      > .about-scroll-button {
+         display: none;
+      }
+   }
 `;
 export const StyledTopTextContainer = styled.aside`
    grid-column-start: 1;
@@ -62,17 +71,29 @@ export const StyledTopTextContainer = styled.aside`
    display: flex;
    align-items: center;
    justify-content: center;
+   @media only screen and (max-width: 1050px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+   }
 `;
 export const StyledCenterTextContainer = styled.aside`
    grid-column-start: 2;
    grid-column-end: 3;
    grid-row-start: 1;
-   grid-row-end: 2;
+   grid-row-end: 3;
    display: flex;
    align-items: center;
    justify-content: center;
    border-bottom: 1px solid #e6e6e6;
    border-left: 1px solid #e6e6e6;
+   @media only screen and (max-width: 1050px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 3;
+      grid-row-end: 4;
+   }
 `;
 export const StyledBottomTextContainer = styled.aside`
    grid-column-start: 2;
@@ -84,6 +105,9 @@ export const StyledBottomTextContainer = styled.aside`
    display: flex;
    align-items: center;
    justify-content: center;
+   @media only screen and (max-width: 1050px) {
+      display: none;
+   }
 `;
 export const StyledNumbersContainer = styled.div`
    grid-column-start: 1;
@@ -110,16 +134,30 @@ export const StyledNumbersContainer = styled.div`
          margin: 0;
       }
    }
+   @media only screen and (max-width: 1050px) {
+      > div {
+         > h3 {
+            font-size:2vh;
+         }
+   }
+
 `;
 
 export const StyledImageWrapper = styled.div`
    overflow: hidden;
    position: relative;
+
    grid-column-start: 1;
    grid-column-end: 2;
    grid-row-start: 2;
    grid-row-end: 4;
    > svg {
       width: 100%;
+   }
+   @media only screen and (max-width: 1050px) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
    }
 `;
