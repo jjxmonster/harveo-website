@@ -41,6 +41,7 @@ export const StyledFooterWrapper = styled.footer`
       display: flex;
       align-items:center;
       justify-content:space-around;
+  
    }
    >.footer-center{
       width:100%;
@@ -53,5 +54,32 @@ export const StyledFooterWrapper = styled.footer`
    }
    >.footer-bottom{
       display:none;
-   }   
+   }
+   
+   // mobile
+   @media only screen and (max-width: 1050px) {
+      padding:0 0;
+      flex-direction:row;
+      >.footer-top{
+         height:100%;
+         flex-direction:column;
+         >p {display:none;}
+         >p:first-child{
+            display:block;
+         }
+      }
+      &:hover{
+         height:50%;
+         >.footer-center{
+            display: flex;
+         }
+         >.footer-top{
+            >p {display:block;}
+         }
+         >.footer-bottom{display:block;}
+         >h3{
+            opacity:1;
+         }
+      }
+   }
 `;

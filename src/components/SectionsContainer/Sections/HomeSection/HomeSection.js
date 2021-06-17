@@ -25,6 +25,7 @@ const HomeSection = ({ handleChangePage }) => {
                onClick={() => handleChangePage(0)}
                simple
                round
+               className='prev-page-button-container'
             >
                <div className='button-icon'>
                   <i className='fas fa-chevron-left'></i>
@@ -39,7 +40,7 @@ const HomeSection = ({ handleChangePage }) => {
             <h1 className='title-home'>HARVEO</h1>
             <p className='description-home'>{t('homepage.description')}</p>
             <Button color='primary' className='homepage-main-button'>
-               Read more
+               {t('homepage.button-main')}
             </Button>
          </StyledHomeTextWrapper>
          <StyledHomeImageWrapper className='svg-wrapper'>

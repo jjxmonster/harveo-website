@@ -9,6 +9,7 @@ import { HomeSection, ProfitsSection, AboutSection } from './Sections';
 // pages animations on unmount
 import { homePageAnimationsOnUnMount } from './Sections/HomeSection/HomeSectionAnimations.js';
 import { aboutPageAnimationsOnUnMount } from './Sections/AboutSection/AboutSectionAnimations.js';
+import { profitsPageAnimationOnUnMount } from './Sections/ProfitsSection/ProfitsPageAnimations.js';
 
 const SectionsContainer = () => {
    const [transitionDirection, setTransitionDirection] = useState('left');
@@ -57,7 +58,7 @@ const SectionsContainer = () => {
          case 3:
             return <ProfitsSection handleChangePage={handleChangePage} />;
          default:
-            <HomeSection />;
+            return;
       }
    };
 
@@ -70,7 +71,7 @@ const SectionsContainer = () => {
             aboutPageAnimationsOnUnMount();
             break;
          case 3:
-            console.log('welcome ');
+            profitsPageAnimationOnUnMount();
             break;
          default:
             return;

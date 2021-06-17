@@ -3,13 +3,22 @@ import styled, { keyframes } from 'styled-components';
 export const StyledSectionsContainer = styled.div`
    width: 100%;
    height: 100%;
+
    > .pagination {
+      display: flex;
+      justify-content: center;
       position: fixed;
       bottom: 5%;
       left: 0;
       right: 0;
       margin: auto;
       width: 300px;
+   }
+   // mobile
+   @media only screen and (max-width: 1050px) {
+      > .pagination {
+         bottom: 10%;
+      }
    }
 `;
 
@@ -46,6 +55,7 @@ export const StyledNextSectionButtonWrapper = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
+   overflow-x: hidden;
    > button:hover span .button-text {
       transform: translate(-10px, -10px);
    }
@@ -71,6 +81,17 @@ export const StyledNextSectionButtonWrapper = styled.div`
    > button span .button-icon {
       margin-left: 2%;
    }
+   // mobile
+   @media only screen and (max-width: 1050px) {
+      > button span .button-text {
+         > h3 {
+            display: none;
+         }
+         > p {
+            display: none;
+         }
+      }
+   }
 `;
 export const StyledPrevSectionButtonWrapper = styled.div`
    width: 10%;
@@ -82,6 +103,7 @@ export const StyledPrevSectionButtonWrapper = styled.div`
    display: flex;
    align-items: center;
    justify-content: center;
+   overflow-x: hidden;
    > button:hover span .button-text {
       transform: translate(10px, -10px);
    }
@@ -106,5 +128,15 @@ export const StyledPrevSectionButtonWrapper = styled.div`
    }
    > button span .button-icon {
       margin-left: 2%;
+   }
+   @media only screen and (max-width: 1050px) {
+      > button span .button-text {
+         > h3 {
+            display: none;
+         }
+         > p {
+            display: none;
+         }
+      }
    }
 `;

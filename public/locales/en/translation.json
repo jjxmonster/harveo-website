@@ -14,7 +14,8 @@
       "button": {
          "title": "About us",
          "description": "Meet us better"
-      }
+      },
+      "button-main": "Read more"
    },
    "about": {
       "button-prev-page": {

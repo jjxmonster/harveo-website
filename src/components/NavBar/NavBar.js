@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -8,6 +8,7 @@ import CustomDropdown from 'MaterialComponents/CustomDropdown/CustomDropdown';
 import { StyledNavBarWrapper } from './NavBar.css.js';
 
 const NavBar = () => {
+   const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
    const { i18n, t } = useTranslation();
 
    const changeLanguage = language => {
@@ -47,7 +48,10 @@ const NavBar = () => {
    }, []);
 
    return (
-      <StyledNavBarWrapper className='nav-bar'>
+      <StyledNavBarWrapper
+         className='nav-bar'
+         isMobileMenuActive={isMobileMenuActive}
+      >
          <img src={Logo} alt='logo' className='nav-logo' />
          <a>{t('nav.1')}</a>
          <a>{t('nav.2')}</a>

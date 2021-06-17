@@ -60,4 +60,48 @@ export const StyledNavBarWrapper = styled.nav`
       display: flex;
       align-items: center;
    }
+   
+   //mobile 
+      @media only screen and (max-width: 1050px) {
+        
+         flex-direction:column;
+         ${({ isMobileMenuActive }) =>
+            isMobileMenuActive
+               ? `   
+            height:100%;  
+            >nav-logo{
+               height: 5vh;
+            }
+            > .language-dropdown{
+               display:block;
+            }
+         `
+               : `
+            height:10vh;
+            >a{
+               display:none;
+               opacity:0;
+            }
+            >.language-dropdown{
+               display:none;
+               opacity:0;
+            }
+            > .nav-logo{
+               height:80%;
+            }
+         `}
+         > .nav-logo {
+            position: absolute;
+            top: 2vw;
+            margin: auto;
+            bottom:auto;
+         }
+         > .language-dropdown {
+            position:static;
+            height:auto;
+            display:block;
+            margin:0;
+         }
+      
+   }
 `;

@@ -5,6 +5,11 @@ export const StyledHomeSectionWrapper = styled.section`
    height: 100vh;
    display: flex;
    padding: 0 5%;
+
+   // mobile
+   @media only screen and (max-width: 1050px) {
+      flex-direction: column-reverse;
+   }
 `;
 
 export const StyledHomeTextWrapper = styled.div`
@@ -22,6 +27,19 @@ export const StyledHomeTextWrapper = styled.div`
       font-size: 1.6vw;
       line-height: normal;
    }
+
+   //mobile
+   @media only screen and (max-width: 1050px) {
+      justify-content: flex-start;
+      > h1 {
+         font-weight: 700;
+         font-size: 10vw;
+      }
+      > p {
+         font-size: 5vw;
+         line-height: normal;
+      }
+   }
 `;
 
 export const StyledHomeImageWrapper = styled.div`
@@ -32,5 +50,10 @@ export const StyledHomeImageWrapper = styled.div`
    > svg {
       width: 80%;
       height: 80%;
+   }
+   @media only screen and (max-width: 1050px) {
+      flex: 1;
+      align-items: flex-end;
+      justify-content: center;
    }
 `;

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+
+import { profitsPageAnimationOnMount } from './ProfitsPageAnimations.js';
 
 import { StyledProfitsSectionWrapper } from './ProfitsSection.css.js';
 import {
@@ -14,13 +16,17 @@ import InfoArea from 'MaterialComponents/InfoArea/InfoArea.js';
 
 const ProfitsSection = ({ handleChangePage }) => {
    const { t } = useTranslation();
+
+   useEffect(() => {
+      profitsPageAnimationOnMount();
+   }, []);
    return (
       <StyledProfitsSectionWrapper>
          <StyledPrevSectionButtonWrapper className='prev-page-button-container'>
             <Button
                color='github'
                size='lg'
-               onClick={() => handleChangePage(1)}
+               onClick={() => handleChangePage(2)}
                simple
                round
             >

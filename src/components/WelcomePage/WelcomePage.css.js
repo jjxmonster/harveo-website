@@ -36,7 +36,7 @@ export const StyledWelcomePage = styled.div`
    align-items: center;
    justify-content: center;
    > div {
-      width: 20%;
+      width: 30vh;
       display: flex;
       align-items: center;
       justify-content: center;

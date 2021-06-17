@@ -12,9 +12,10 @@
    "homepage": {
       "description": "Finanse i Nieruchomości. Profesjonalna obsługa również 100% w języku Angielskim.",
       "button": {
-         "h3": "O nas",
-         "p": "Poznaj nas lepiej"
-      }
+         "title": "O nas",
+         "description": "Poznaj nas lepiej"
+      },
+      "button-main": "Czytaj więcej"
    },
    "about": {
       "button-prev-page": {

@@ -6,11 +6,12 @@ import Footer from '../Footer';
 import SectionsContainer from '../SectionsContainer';
 import { StyledLandingPageWrapper } from './LandingPage.css.js';
 
-const LandingPage = () => {
+const LandingPage = ({ isWelcomeViewActive }) => {
+   console.log(isWelcomeViewActive);
    return (
       <StyledLandingPageWrapper>
          <NavBar />
-         <SectionsContainer />
+         {!isWelcomeViewActive ? <SectionsContainer /> : null}
          <Footer />
       </StyledLandingPageWrapper>
    );
