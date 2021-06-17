@@ -10,10 +10,12 @@ export const StyledNavBarWrapper = styled.nav`
    align-items: center;
    justify-content: space-around;
    padding: 0 20%;
+   box-shadow: rgb(0 0 0 / 20%) 0px 1px 3px;
    background: linear-gradient(
-      36deg
-      , rgb(235, 235, 235) 12%, rgb(245, 245, 245) 71%);
-      }
+      36deg,
+      rgb(235, 235, 235) 12%,
+      rgb(245, 245, 245) 71%
+   );
    transition: ease 0.4s;
    > a {
       cursor: pointer;
@@ -60,23 +62,23 @@ export const StyledNavBarWrapper = styled.nav`
       display: flex;
       align-items: center;
    }
-   
-   //mobile 
-      @media only screen and (max-width: 1050px) {
-        
-         flex-direction:column;
-         ${({ isMobileMenuActive }) =>
-            isMobileMenuActive
-               ? `   
+
+   //mobile
+   @media only screen and (max-width: 1050px) {
+      transition: 0.5s ease;
+      flex-direction: column;
+      ${({ isMobileMenuActive }) =>
+         isMobileMenuActive
+            ? `   
             height:100%;  
-            >nav-logo{
-               height: 5vh;
+            > .nav-logo{
+               height: 7vh;
             }
             > .language-dropdown{
                display:block;
             }
          `
-               : `
+            : `
             height:10vh;
             >a{
                display:none;
@@ -86,22 +88,55 @@ export const StyledNavBarWrapper = styled.nav`
                display:none;
                opacity:0;
             }
-            > .nav-logo{
-               height:80%;
-            }
+          
          `}
-         > .nav-logo {
-            position: absolute;
-            top: 2vw;
-            margin: auto;
-            bottom:auto;
-         }
-         > .language-dropdown {
-            position:static;
-            height:auto;
-            display:block;
-            margin:0;
-         }
-      
+      > .nav-logo {
+         position: absolute;
+         top: 2vw;
+         margin: auto;
+         bottom: auto;
+         height: 7vh;
+      }
+      > .language-dropdown {
+         position: static;
+         height: auto;
+         display: block;
+         margin: 0;
+      }
    }
+`;
+
+export const StyledHamburgerMenu = styled.div`
+   width: 7vh;
+   height: 7vh;
+   position: absolute;
+   right: 5%;
+   top: 2vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   padding: 4% 2%;
+   > div {
+      transition: 0.2s ease;
+      border-radius: 1px;
+      width: 28px;
+      height: 2px;
+      background: black;
+   }
+   ${({ isMobileMenuActive }) =>
+      isMobileMenuActive
+         ? `
+         justify-content: flex-start;
+      >div:first-child{
+            transform:rotate(45deg);
+      }
+      >div:last-child{
+         transform:translateY(-4px) rotate(-45deg);
+      }
+      >div:nth-child(2){
+         opacity:0;
+         }
+         `
+         : null}
 `;

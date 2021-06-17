@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 import Logo from '../../images/Harveo-logo.png';
 import CustomDropdown from 'MaterialComponents/CustomDropdown/CustomDropdown';
-import { StyledNavBarWrapper } from './NavBar.css.js';
+import { StyledNavBarWrapper, StyledHamburgerMenu } from './NavBar.css.js';
 
 const NavBar = () => {
    const [isMobileMenuActive, setIsMobileMenuActive] = useState(false);
@@ -26,6 +26,11 @@ const NavBar = () => {
             changeLanguage('en');
             break;
       }
+   };
+   const handleToogleIsMobileMenuActive = () => {
+      isMobileMenuActive
+         ? setIsMobileMenuActive(false)
+         : setIsMobileMenuActive(true);
    };
 
    useEffect(() => {
@@ -52,6 +57,14 @@ const NavBar = () => {
          className='nav-bar'
          isMobileMenuActive={isMobileMenuActive}
       >
+         <StyledHamburgerMenu
+            isMobileMenuActive={isMobileMenuActive}
+            onClick={handleToogleIsMobileMenuActive}
+         >
+            <div></div>
+            <div></div>
+            <div></div>
+         </StyledHamburgerMenu>
          <img src={Logo} alt='logo' className='nav-logo' />
          <a>{t('nav.1')}</a>
          <a>{t('nav.2')}</a>
