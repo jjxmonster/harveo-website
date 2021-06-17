@@ -3,10 +3,8 @@ import styled, { keyframes } from 'styled-components';
 export const StyledSectionsContainer = styled.div`
    width: 100%;
    height: 100%;
-   // position: relative;
-
    > .pagination {
-      position: absolute;
+      position: fixed;
       bottom: 5%;
       left: 0;
       right: 0;

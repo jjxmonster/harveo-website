@@ -27,11 +27,7 @@ export default function Pagination(props) {
             });
             return (
                <li className={classes.paginationItem} key={key}>
-                  {prop.onClick !== undefined ? (
-                     <Button onClick={prop.onClick} className={paginationLink}>
-                        {prop.text}
-                     </Button>
-                  ) : (
+                  {prop.onClick !== undefined ? null : (
                      <Button
                         onClick={() => pages[0].onClick(key)}
                         className={paginationLink}
@@ -55,7 +51,7 @@ Pagination.propTypes = {
       PropTypes.shape({
          active: PropTypes.bool,
          disabled: PropTypes.bool,
-         text: PropTypes.oneOfType([PropTypes.string]).isRequired,
+         text: PropTypes.oneOfType([PropTypes.string]),
          onClick: PropTypes.func,
       })
    ).isRequired,

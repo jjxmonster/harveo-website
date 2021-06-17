@@ -9,7 +9,7 @@ const SectionsTransitionsContainer = ({ direction }) => {
          case 'left':
             gsap.to('.transition-container', {
                x: '-100%',
-               duration: 2,
+               duration: 1.5,
                delay: 1,
                ease: 'easeInOut',
             });
@@ -17,7 +17,7 @@ const SectionsTransitionsContainer = ({ direction }) => {
          case 'right':
             gsap.to('.transition-container', {
                x: '100%',
-               duration: 2,
+               duration: 1.5,
                delay: 1,
                ease: 'easeInOut',
             });

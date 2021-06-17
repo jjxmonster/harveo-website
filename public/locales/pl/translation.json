@@ -17,6 +17,13 @@
       }
    },
    "about": {
+      "button-prev-page": {
+         "description": "Finanse i Nieruchomości."
+      },
+      "button-next-page": {
+         "title": "Profity",
+         "description": "Co otrzymujesz?"
+      },
       "text1": "Jesteśmy butikową firmą w 100% napędzaną pasją i mocno skoncentrowaną na jakości, zaufaniu i długotrwałych relacjach z naszymi klientami, dzięki czemu obecnie pracujemy praktycznie wyłącznie na rekomendacjach rynku premium. Działamy od 2010 roku mając zaszczyt pomagać ponad pięciu tysiącom klientów na całym świecie. Dzięki temu doświadczeniu doskonale znamy i rozumiemy sytuację osoby stojącej przed decyzją o zaciągnięciu kredytu hipotecznego lub osoby budującej portfel nieruchomości inwestycyjnych.",
       "text2": "Mając świadomość, jak zawiły, skomplikowany i wieloetapowy jest proces, dokładamy wszelkich starań, aby każda rzecz z nim związana była dla Ciebie jasna i całkowicie przejrzysta. Zapewniamy kompleksową obsługę, pomoc i wsparcie na każdym etapie procesu, a także negocjujemy warunki kredytu z bankami, co gwarantuje satysfakcję każdej osoby, która do nas przyjdzie.",
       "text3": "Wyróżnia nas empatia, moralność i podejście etyczne – co wynika bezpośrednio z naszych charakterów i wewnętrznych przekonań. Działamy z pasji do finansów, liczb i relacji z klientami. Satysfakcja, jaką daje nam zadowolenie naszych klientów – jest bezcenna.",
@@ -61,6 +68,32 @@
             "city5": "Wrocław"
          },
          "button": "Skontaktuj się z nami"
+      }
+   },
+   "profits": {
+      "box1": {
+         "title": "Spotkanie edukacyjne",
+         "text": "Zaczynamy od spotkań lub video rozmów aby mieć pewność, że zdobędziesz całą niezbędną wiedzę oraz uzyskasz odpowiedzi na nurtujące pytania. Priorytetem jest dla nas pełna świadomość klienta odnośnie wszystkich dostępnych ofert na rynku, podstawowych zasad ekonomii, mechanizmów bankowych, swoich praw jak i zapisów w umowie kredytowej."
+      },
+      "box2": {
+         "title": "Ocena zdolności kredytowej",
+         "text": "Najważniejszy krok, który determinuje Twoje dalsze decyzje. Podczas spotkania obliczymy zdolność kredytową w poszczególnych bankach, wskażemy ryzyka oraz potencjalne słabe punkty transakcji, które możesz napotkać w trakcie procesu wnioskowania o kredyt."
+      },
+      "box3": {
+         "title": "Dopasowanie najlepszej oferty",
+         "text": "Dla każdego klienta opracowujemy indywidualną koncepcję i strategie działania wraz ze szczegółowym planem oraz checklistą. Pozwól nam znaleźć dla Ciebie najbardziej atrakcyjne oferty i dostosować je do Twoich potrzeb, oczekiwań i możliwości finansowych."
+      },
+      "box4": {
+         "title": "Opieka od A do Z podczas całego procesu",
+         "text": "Wspieramy klienta, prowadząc “za rękę” krok po kroku przez cały proces kredytowy. Od pierwszego połączenia telefonicznego, spotkań i rozmów, wypełniania wszystkich dokumentów, formalności, aż do podpisania umowy kredytowej w banku i całkowitego zamknięcia procesu.  Z nami nigdy nie zostajesz bez wsparcia i opieki."
+      },
+      "box5": {
+         "title": "Pomoc w kompletowaniu niezbędnych dokumentów",
+         "text": "Przeciętny wniosek o kredyt hipoteczny dla jednego banku zawiera kilkadziesiąt stron różnego rodzaju dokumentów, co czyni proces przygotowania bardzo złożonym i trudnym, szczególnie dla niedoświadczonej osoby. Pomożemy Ci sprawnie zebrać niezbędne dokumenty i złożymy za Ciebie wniosek w każdym wybranym banku."
+      },
+      "box6": {
+         "title": "Pomoc prawna i bezpieczeństwo",
+         "text": "Największy nacisk kładziemy na dokładne zrozumienie całego procesu kredytowego oraz Twoje bezpieczeństwo. Przed podjęciem jakiejkolwiek decyzji będziesz mieć pełną świadomość i znajomość warunków dotyczących nieruchomości i umów kredytowych. Dodatkowo współpracujemy z radcami prawnymi oraz notariuszami, dzięki czemu możesz zasięgnąć informacji lub skorzystać z ich porady prawnej"
       }
    }
 }

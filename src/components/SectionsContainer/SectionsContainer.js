@@ -5,21 +5,10 @@ import Paginations from 'MaterialComponents/Pagination/Pagination.js';
 import { StyledSectionsContainer } from './SectionsContainer.css';
 import SectionsTransitionsContainer from './SectionsTransitionContainer';
 
-import {
-   HomeSection,
-   ProfitsSection,
-   GoogleReviewSection,
-   AboutSection,
-} from './Sections';
+import { HomeSection, ProfitsSection, AboutSection } from './Sections';
 // pages animations on unmount
-import {
-   homePageAnimationsOnMount,
-   homePageAnimationsOnUnMount,
-} from './Sections/HomeSection/HomeSectionAnimations.js';
-import {
-   aboutPageAnimationsOnUnMount,
-   aboutSectionAnimations,
-} from './Sections/AboutSection/AboutSectionAnimations.js';
+import { homePageAnimationsOnUnMount } from './Sections/HomeSection/HomeSectionAnimations.js';
+import { aboutPageAnimationsOnUnMount } from './Sections/AboutSection/AboutSectionAnimations.js';
 
 const SectionsContainer = () => {
    const [transitionDirection, setTransitionDirection] = useState('left');
@@ -29,9 +18,7 @@ const SectionsContainer = () => {
       { active: true, text: '_____' },
       { text: '_____' },
       { text: '_____' },
-      { text: '_____' },
    ]);
-
    const handleChangePage = index => {
       if (activePage === index) return;
       setIsTransitionActive(true);
@@ -46,6 +33,8 @@ const SectionsContainer = () => {
       }, 0);
       // wait for transition ending, then change page number and default settings
       setTimeout(() => {
+         if (index === 4) index = 1;
+         if (index === 0) index = 3;
          setActivePage(index);
          setPages(
             pages.map((item, i) => {
@@ -66,9 +55,7 @@ const SectionsContainer = () => {
          case 2:
             return <AboutSection handleChangePage={handleChangePage} />;
          case 3:
-            return <ProfitsSection />;
-         case 4:
-            return <GoogleReviewSection />;
+            return <ProfitsSection handleChangePage={handleChangePage} />;
          default:
             <HomeSection />;
       }
@@ -81,6 +68,9 @@ const SectionsContainer = () => {
             break;
          case 2:
             aboutPageAnimationsOnUnMount();
+            break;
+         case 3:
+            console.log('welcome ');
             break;
          default:
             return;

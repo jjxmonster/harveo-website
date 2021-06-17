@@ -1,10 +1,10 @@
 import gsap from 'gsap';
 
 export const homePageAnimationsOnMount = () => {
-   console.log('home page');
-   //text
+   //left site
    gsap.from('.title-home', { x: -50, opacity: 0, delay: 0.7 });
    gsap.from('.description-home', { x: -50, opacity: 0, delay: 0.7 });
+   gsap.from('.homepage-main-button', { x: -50, opacity: 0, delay: 0.7 });
    // svg
    gsap.from('#svg-men', { x: 50, opacity: 0, delay: 0.8 });
    gsap.from('#svg-dots', { scale: 0, opacity: 0, delay: 1, duration: 1 });
@@ -25,6 +25,7 @@ export const homePageAnimationsOnMount = () => {
 export const homePageAnimationsOnUnMount = () => {
    gsap.to('.title-home', { y: -50, opacity: 0 });
    gsap.to('.description-home', { y: -50, opacity: 0 });
+   gsap.to('.homepage-main-button', { y: -50, opacity: 0 });
    gsap.to('.svg-wrapper', { y: -50, opacity: 0 });
    gsap.to('.next-page-button', { x: -50, opacity: 0 });
 };

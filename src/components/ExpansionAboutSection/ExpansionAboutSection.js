@@ -45,8 +45,8 @@ const ExpansionAboutSection = () => {
                We serve clients worldwide via encrypted calls {'&'} video
                meetings as well.
             </p>
-            <Button>
-               <i class='far fa-envelope'></i> {t('about.expansion.button')}
+            <Button color='primary'>
+               <i className='far fa-envelope'></i> {t('about.expansion.button')}
             </Button>
          </section>
       </StyledExpansionWrapper>

@@ -9,7 +9,7 @@ export const StyledHomeSectionWrapper = styled.section`
 
 export const StyledHomeTextWrapper = styled.div`
    flex: 1;
-   padding-left: 5%;
+   padding-left: 10%;
    display: flex;
    flex-direction: column;
    align-items: start;

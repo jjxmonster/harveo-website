@@ -12,11 +12,18 @@
    "homepage": {
       "description": "Finance & Real Estate. Professional guidance 100% in English.",
       "button": {
-         "h3": "About us",
-         "p": "Meet us better"
+         "title": "About us",
+         "description": "Meet us better"
       }
    },
    "about": {
+      "button-prev-page": {
+         "description": "Finance & Real Estate"
+      },
+      "button-next-page": {
+         "title": "Profits",
+         "description": "What do you get?"
+      },
       "text1": "We are a boutique company 100% driven by passion and highly focused on quality, trust and long-term relationship with our clients, thanks to which we currently work practically only on recommendations of premium market. We have been operating since 2010 being honored of helping over five thousand clients worldwide. Thanks to this experience we perfectly know and understand the situation of a person facing the decision of applying a mortgage or a person building a portfolio of investment properties.",
       "text2": "Being aware of how intricate, complicated and multi-stage process is, we make enormous effort to ensure that every single thing related to it is clear and completely transparent for you on the whole way. We provide comprehensive service, help and support at every stage of the process, as well as negotiate loan terms with banks, which guarantees the satisfaction of every person who comes to us.",
       "text3": "We are distinguished by empathy, morality and an ethical approach – which results directly from our characters and internal beliefs. We do business because of passion for finance, numbers and relationships with clients. The satisfaction which our customer satisfaction gives us – is priceless.",
@@ -61,6 +68,32 @@
             "city5": "Wroclaw"
          },
          "button": "Contact us"
+      }
+   },
+   "profits": {
+      "box1": {
+         "title": "Educational meeting",
+         "text": "We start with meetings or video calls to make sure that you get all the necessary knowledge and get answers to bothering questions. Our priority is the customer’s full awareness of all available offers on the market, the basic principles of the economy, banking mechanisms, their rights and the provisions of the loan agreement."
+      },
+      "box2": {
+         "title": "Creditworthiness assessment",
+         "text": "The most important step that determines your further decisions. During the meeting, we will calculate the creditworthiness of individual banks, indicate the risks and potential weaknesses of the transaction that you may encounter during the loan application process."
+      },
+      "box3": {
+         "title": "Matching the best offer",
+         "text": "For each client, we develop an individual concept and action strategies with a detailed plan and checklist. Let us find the most attractive offers for you and adapt them to your needs, expectations and financial possibilities"
+      },
+      "box4": {
+         "title": "Expert assistance from `A` to `Z` throughout the entire process",
+         "text": "We support the client by leading “by hand” step by step through the entire loan process. From the first phone call, meetings and conversations, completing all documents, formalities, up to signing the loan agreement with the bank and complete closure of the process. You never stay with us without support and care."
+      },
+      "box5": {
+         "title": "Assistance in completing the necessary documents",
+         "text": "The average mortgage application for one bank contains several dozen pages of various types of documents, which makes the preparation process very complex and difficult, especially for an inexperienced person. We will help you efficiently collect the necessary documents and we will submit an application for you to any selected bank."
+      },
+      "box6": {
+         "title": "Legal assistance and safety",
+         "text": "We place the greatest emphasis on a thorough understanding of the entire loan process and your safety. Before making any decision, you will be fully aware and familiar with the property conditions and loan agreements. In addition, we work with legal advisers and notaries, so you can get information or take advantage of their legal advice"
       }
    }
 }

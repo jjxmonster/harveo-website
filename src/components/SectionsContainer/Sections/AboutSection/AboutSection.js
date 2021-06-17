@@ -15,14 +15,9 @@ import {
    StyledCenterTextContainer,
    StyledBottomTextContainer,
    StyledNumbersContainer,
-   StyledTopImageWrapper,
-   StyledCenterImageWrapper,
-   StyledBottomImageWrapper,
+   StyledImageWrapper,
    StyledGridContainerAbout,
 } from './AboutSection.css.js';
-import Image1 from '../../../../images/about-image-1.jpg';
-import Image2 from '../../../../images/about-image-2.jpg';
-import Image3 from '../../../../images/about-image-3.webp';
 import { ReactComponent as HomeImage } from '../../../../images/about-image.svg';
 
 const AboutSection = ({ handleChangePage }) => {
@@ -34,9 +29,8 @@ const AboutSection = ({ handleChangePage }) => {
 
    return (
       <StyledAboutSectionWrapper className='about-container'>
-         <StyledPrevSectionButtonWrapper>
+         <StyledPrevSectionButtonWrapper className='prev-page-button-container'>
             <Button
-               className='next-page-button'
                color='github'
                size='lg'
                onClick={() => handleChangePage(1)}
@@ -44,11 +38,11 @@ const AboutSection = ({ handleChangePage }) => {
                round
             >
                <div className='button-icon'>
-                  <i class='fas fa-chevron-left'></i>
+                  <i className='fas fa-chevron-left'></i>
                </div>
                <div className='button-text'>
-                  <h3>Home</h3>
-                  <p>Finance {'&'} Real Estate</p>
+                  <h3>Harveo</h3>
+                  <p>{t('about.button-prev-page.description')}</p>
                </div>
             </Button>
          </StyledPrevSectionButtonWrapper>
@@ -59,56 +53,47 @@ const AboutSection = ({ handleChangePage }) => {
                size='sm'
                color='github'
             >
-               Scroll down <i class='fas fa-long-arrow-alt-down'></i>
+               Scroll down <i className='fas fa-long-arrow-alt-down'></i>
             </Button>
-            <StyledTopImageWrapper className='about-top'>
-               {/* <h4>01 Experience</h4>
-               <img src={Image1} alt='image-1' /> */}
+            <StyledImageWrapper className='about-top'>
                <HomeImage />
-            </StyledTopImageWrapper>
+            </StyledImageWrapper>
             <StyledTopTextContainer>
                <h3>01</h3>
                <p>{t('about.text1')}</p>
             </StyledTopTextContainer>
-            {/* <StyledCenterImageWrapper className='about-center'>
-               <h4>02 Support</h4>
-               <img src={Image2} alt='image-2' />
-            </StyledCenterImageWrapper> */}
+
             <StyledCenterTextContainer className='about-center'>
                <h3>02</h3>
                <p>{t('about.text2')}</p>
             </StyledCenterTextContainer>
-            {/* <StyledBottomImageWrapper className='about-bottom'>
-               <h4>03 Satisfaction</h4>
-               <img src={Image3} alt='image-3' />
-            </StyledBottomImageWrapper> */}
+
             <StyledBottomTextContainer className='about-bottom'>
                <h3>03</h3>
                <p>{t('about.text3')}</p>
             </StyledBottomTextContainer>
             <StyledNumbersContainer>
-               <div>
+               <div className='about-numbers'>
                   <h3>12</h3>
                   <p>{t('about.numbers.exp')}</p>
                </div>
-               <div>
+               <div className='about-numbers'>
                   <h3>5031</h3>
                   <p>{t('about.numbers.served')}</p>
                </div>
-               <div>
+               <div className='about-numbers'>
                   <h3>2687</h3>
                   <p>{t('about.numbers.credits')}</p>
                </div>
-               <div>
+               <div className='about-numbers'>
                   <h3>12</h3>
                   <p>{t('about.numbers.offer')}</p>
                </div>
             </StyledNumbersContainer>
          </StyledGridContainerAbout>
          <ExpansionAboutSection />
-         <StyledNextSectionButtonWrapper>
+         <StyledNextSectionButtonWrapper className='next-page-button-wrapper'>
             <Button
-               className='next-page-button'
                color='github'
                size='lg'
                onClick={() => handleChangePage(3)}
@@ -116,11 +101,11 @@ const AboutSection = ({ handleChangePage }) => {
                round
             >
                <div className='button-text'>
-                  <h3>Profits</h3>
-                  <p>What do you get?</p>
+                  <h3>{t('about.button-next-page.title')}</h3>
+                  <p>{t('about.button-next-page.description')}</p>
                </div>
                <div className='button-icon'>
-                  <i class='fas fa-chevron-right'></i>
+                  <i className='fas fa-chevron-right'></i>
                </div>
             </Button>
          </StyledNextSectionButtonWrapper>
