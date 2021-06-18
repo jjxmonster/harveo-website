@@ -1,6 +1,6 @@
 ## CHECK IT ONLINE!
 
-https://movie-library-react.herokuapp.com/home
+https://jakub-tarabasz-harveo.netlify.app/
 
 <p align="center">
   <h3 align="center">HARVEO</h3>
