@@ -23,9 +23,18 @@ const Footer = () => {
             </p>
          </div>
          <div className='footer-center'>
-            <i className='fab fa-google'></i>
-            <i className='fab fa-facebook-f'></i>
-            <i className='fab fa-linkedin-in'></i>
+            <a
+               target='_blank'
+               href='https://www.google.com/maps/place/Harveo+Doradca+Kredytowy+kredyt+hipoteczny+Krak%C3%B3w/@50.0328899,19.9357238,17z/data=!3m1!4b1!4m5!3m4!1s0x47165bfcad6297ff:0x5b34919713ec3c72!8m2!3d50.0328893!4d19.9379299'
+            >
+               <i className='fab fa-google'></i>
+            </a>
+            <a target='_blank' href='https://www.facebook.com/harveo.official/'>
+               <i className='fab fa-facebook-f'></i>
+            </a>
+            <a target='_blank' href='https://www.linkedin.com/in/jakubpajak/'>
+               <i className='fab fa-linkedin-in'></i>
+            </a>
          </div>
          <div className='footer-bottom'>
             <p>

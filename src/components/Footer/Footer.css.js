@@ -53,6 +53,9 @@ export const StyledFooterWrapper = styled.footer`
       align-items: center;
       justify-content: space-around;
       padding: 0 40%;
+      > a {
+         color: black;
+      }
    }
    > .footer-bottom {
       position: absolute;
