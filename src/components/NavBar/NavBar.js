@@ -66,8 +66,15 @@ const NavBar = () => {
             <div></div>
          </StyledHamburgerMenu>
          <img src={Logo} alt='logo' className='nav-logo' />
-         <a>{t('nav.1')}</a>
-         <a>{t('nav.2')}</a>
+         <a href='https://harveo.pl/platform/' target='_blank'>
+            {t('nav.1')}
+         </a>
+         <a
+            href='https://www.google.com/maps/place//data=!4m2!3m1!1s0x47165bfcad6297ff:0x5b34919713ec3c72?source=g.page.default'
+            target='_blank'
+         >
+            {t('nav.2')}
+         </a>
          <a>{t('nav.3')}</a>
          <a>{t('nav.4')}</a>
          <div className='language-dropdown'>

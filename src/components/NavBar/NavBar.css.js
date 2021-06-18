@@ -64,7 +64,7 @@ export const StyledNavBarWrapper = styled.nav`
    }
 
    //mobile
-   @media only screen and (max-width: 1050px) {
+   @media only screen and (max-width: 900px) {
       transition: 0.5s ease;
       flex-direction: column;
       ${({ isMobileMenuActive }) =>
@@ -120,12 +120,16 @@ export const StyledHamburgerMenu = styled.div`
    align-items: center;
    justify-content: space-around;
    padding: 4% 2%;
+   display: none;
    > div {
       transition: 0.2s ease;
       border-radius: 1px;
       width: 28px;
       height: 2px;
       background: black;
+   }
+   @media only screen and (max-width: 900px) {
+      display: flex;
    }
    ${({ isMobileMenuActive }) =>
       isMobileMenuActive
