@@ -67,7 +67,6 @@ export const StyledFooterWrapper = styled.footer`
    @media only screen and (max-width: 1050px) {
       height: 5%;
       padding: 0 5%;
-      flex-direction: row;
       > h3 {
          top: 0;
          opacity: 1;
@@ -79,9 +78,6 @@ export const StyledFooterWrapper = styled.footer`
          > p {
             display: none;
          }
-         > p:first-child {
-            // display: block;
-         }
       }
       > .footer-center {
          text-align: center;
@@ -89,7 +85,9 @@ export const StyledFooterWrapper = styled.footer`
          height: 100%;
          padding: 0;
       }
+
       &:hover {
+         padding: 0 5% 10%;
          height: 50%;
          > .footer-center {
             display: flex;

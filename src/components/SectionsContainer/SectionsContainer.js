@@ -22,6 +22,11 @@ const SectionsContainer = () => {
    ]);
    const handleChangePage = index => {
       if (activePage === index) return;
+      // scroll top for better ux
+      window.scroll({
+         top: 0,
+         behavior: 'smooth',
+      });
       setIsTransitionActive(true);
       index > activePage
          ? setTransitionDirection('left')

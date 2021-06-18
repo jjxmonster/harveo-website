@@ -24,11 +24,6 @@ export const aboutSectionAnimations = () => {
 };
 
 export const aboutPageAnimationsOnUnMount = () => {
-   // scroll top for better ux
-   window.scroll({
-      top: 0,
-      behavior: 'smooth',
-   });
    gsap.to('.prev-page-button-container', { y: -100, opacity: 0, delay: 0.2 });
    gsap.to('.next-page-button-wrapper', { y: -100, opacity: 0, delay: 0.2 });
    gsap.to('.about-grid', {

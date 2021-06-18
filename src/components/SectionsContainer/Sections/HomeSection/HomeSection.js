@@ -39,7 +39,11 @@ const HomeSection = ({ handleChangePage }) => {
          <StyledHomeTextWrapper>
             <h1 className='title-home'>HARVEO</h1>
             <p className='description-home'>{t('homepage.description')}</p>
-            <Button color='primary' className='homepage-main-button'>
+            <Button
+               color='primary'
+               className='homepage-main-button'
+               onClick={() => handleChangePage(2)}
+            >
                {t('homepage.button-main')}
             </Button>
          </StyledHomeTextWrapper>

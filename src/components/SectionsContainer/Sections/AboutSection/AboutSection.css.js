@@ -76,6 +76,8 @@ export const StyledTopTextContainer = styled.aside`
       grid-column-end: 3;
       grid-row-start: 3;
       grid-row-end: 4;
+      border-bottom: 0;
+      border-left: 1px solid #e6e6e6;
    }
 `;
 export const StyledCenterTextContainer = styled.aside`
@@ -93,6 +95,7 @@ export const StyledCenterTextContainer = styled.aside`
       grid-column-end: 3;
       grid-row-start: 4;
       grid-row-end: 5;
+      border-bottom: 0;
    }
 `;
 export const StyledBottomTextContainer = styled.aside`

@@ -69,7 +69,10 @@ export const StyledNavBarWrapper = styled.nav`
       flex-direction: column;
       ${({ isMobileMenuActive }) =>
          isMobileMenuActive
-            ? `   
+            ? `
+            body{
+               overflow:hidden;
+            }   
             height:100%;  
             > .nav-logo{
                height: 7vh;

@@ -16,7 +16,7 @@ export const StyledLandingPageWrapper = styled.div`
             opacity:1;
          }
          @media only screen and (max-width: 1050px) {
-            
+            padding: 0 5% 10%;
             height: 50%;
             > .footer-center {
                display: flex;
