@@ -75,7 +75,9 @@ const NavBar = () => {
          >
             {t('nav.2')}
          </a>
-         <a>{t('nav.3')}</a>
+         <a href='https://harveo.pl/blog-pl/' target='_blank'>
+            {t('nav.3')}
+         </a>
          <a>{t('nav.4')}</a>
          <div className='language-dropdown'>
             <CustomDropdown
