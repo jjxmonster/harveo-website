@@ -14,6 +14,7 @@ const WelcomePage = ({ setIsWelcomeView }) => {
    const rollWelcomePage = () => {
       welcomeWrapperAnimationOnUnMount();
       document.removeEventListener('wheel', rollWelcomePage);
+      document.removeEventListener('touchmove', rollWelcomePage);
       setTimeout(() => {
          setIsWelcomeView(false);
       }, 3000);
@@ -26,6 +27,9 @@ const WelcomePage = ({ setIsWelcomeView }) => {
             t('welcomePage.title');
          setTimeout(() => {
             document.addEventListener('wheel', rollWelcomePage);
+         }, 1000);
+         setTimeout(() => {
+            document.addEventListener('touchmove', rollWelcomePage);
          }, 1000);
       }, 1500);
    });
