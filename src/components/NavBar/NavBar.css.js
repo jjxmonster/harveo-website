@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const StyledNavBarWrapper = styled.nav`
    z-index: 100;
-   width: 100%;
-   height: 15%;
+   width: 100vw;
+   height: 15vh;
    display: flex;
    position: fixed;
    top: 0;

@@ -11,7 +11,6 @@ const LandingPage = () => {
       <StyledLandingPageWrapper>
          <NavBar />
          <SectionsContainer />
-
          <Footer />
       </StyledLandingPageWrapper>
    );

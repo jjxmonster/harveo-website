@@ -40,7 +40,7 @@ const ProfitsSection = ({ handleChangePage }) => {
             </Button>
          </StyledPrevSectionButtonWrapper>
          <GridContainer className='profits-grid'>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box1.title')}
                   description={t('profits.box1.text')}
@@ -48,7 +48,7 @@ const ProfitsSection = ({ handleChangePage }) => {
                   iconColor='primary'
                />
             </GridItem>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box2.title')}
                   description={t('profits.box2.text')}
@@ -56,35 +56,35 @@ const ProfitsSection = ({ handleChangePage }) => {
                   iconColor='primary'
                />
             </GridItem>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box3.title')}
                   description={t('profits.box3.text')}
-                  icon={<i class='fas fa-sliders-h'></i>}
+                  icon={<i className='fas fa-sliders-h'></i>}
                   iconColor='primary'
                />
             </GridItem>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box4.title')}
                   description={t('profits.box4.text')}
-                  icon={<i class='fas fa-umbrella'></i>}
+                  icon={<i className='fas fa-umbrella'></i>}
                   iconColor='primary'
                />
             </GridItem>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box5.title')}
                   description={t('profits.box5.text')}
-                  icon={<i class='fas fa-umbrella'></i>}
+                  icon={<i className='fas fa-umbrella'></i>}
                   iconColor='primary'
                />
             </GridItem>
-            <GridItem xs='12' sm='6' lg='4'>
+            <GridItem xs={12} sm={6} lg={4}>
                <InfoArea
                   title={t('profits.box6.title')}
                   description={t('profits.box6.text')}
-                  icon={<i class='fas fa-umbrella'></i>}
+                  icon={<i className='fas fa-umbrella'></i>}
                   iconColor='primary'
                />
             </GridItem>
