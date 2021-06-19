@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledProfitsSectionWrapper = styled.section`
+   visibility: hidden;
    width: 100vw;
    min-height: 100vh;
    padding-top: 15vh;

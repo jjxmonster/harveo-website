@@ -15,6 +15,7 @@ export const profitsPageAnimationOnMount = () => {
       opacity: 0,
       delay: 0.5,
    });
+   gsap.to('.profits-container', { visibility: 'visible' });
 };
 export const profitsPageAnimationOnUnMount = () => {
    gsap.to('.prev-page-button-container', { y: -50, opacity: 0, duration: 1 });

@@ -21,7 +21,7 @@ const ProfitsSection = ({ handleChangePage }) => {
       profitsPageAnimationOnMount();
    }, []);
    return (
-      <StyledProfitsSectionWrapper>
+      <StyledProfitsSectionWrapper className='profits-container'>
          <StyledPrevSectionButtonWrapper className='prev-page-button-container'>
             <Button
                color='github'

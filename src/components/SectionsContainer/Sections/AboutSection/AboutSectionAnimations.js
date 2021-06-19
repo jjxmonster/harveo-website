@@ -7,6 +7,7 @@ export const aboutSectionAnimations = () => {
       duration: 1,
       ease: 'easeInOut',
    });
+   gsap.to('.about-container', { visibility: 'visible' });
    // svg
    gsap.from('#svg-abt-men', { x: -100, opacity: 0, delay: 1 });
    gsap.from('#svg-abt-women', { x: 100, opacity: 0, delay: 1 });

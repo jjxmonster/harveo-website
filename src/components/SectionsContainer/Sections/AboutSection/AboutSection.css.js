@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { scrollArrowAnimation } from '../../../WelcomePage/WelcomePage.css.js';
 
 export const StyledAboutSectionWrapper = styled.section`
+   visibility: hidden;
    width: 100%;
    padding-top: 15vh;
 `;
